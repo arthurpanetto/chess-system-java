@@ -1,18 +1,7 @@
-## Getting Started
+# Projeto de Orientação a Objetos em Java
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este projeto foi desenvolvido pelo [Acenelio](https://github.com/acenelio) como parte de uma aula de seu curso de Desenvolvimento em Java com foco em Orientação a Objetos. O objetivo do projeto é aplicar os conhecimentos aprendidos até o momento no curso, utilizando conceitos de orientação a objetos em Java.
 
-## Folder Structure
+## Descrição
 
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+O projeto consiste em desenvolver uma aplicação em Java que demonstre o uso de conceitos e técnicas de programação orientada a objetos. Ele aborda temas como encapsulamento, herança, polimorfismo, interfaces e outros princípios da orientação a objetos.
