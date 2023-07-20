@@ -1,7 +1,5 @@
 package chess;
 
-import java.lang.annotation.Target;
-
 import boardgame.Board;
 import boardgame.Piece;
 import boardgame.Position;
@@ -25,6 +23,12 @@ public class ChessMatch {
             }
         }
         return mat;
+    }
+
+    public boolean[][] possibleMoves(ChessPosition sourcePosition) {
+        Position position = sourcePosition.toPosition();
+        validateSourcePosition(position);
+        return board.piece(position).possibleMoves();
     }
 
     public ChessPiece performChessMove(ChessPosition sourcePosition, ChessPosition targetPosition) {
@@ -53,10 +57,10 @@ public class ChessMatch {
     }
 
     private void validateTargetPosition(Position source, Position target) {
-        if (!board.piece(source).possibleMove(target)){
+        if (!board.piece(source).possibleMove(target)) {
             throw new ChessException("The chosen piece can't move to target position");
         }
-            
+
     }
 
     private void placeNewPiece(char column, int row, ChessPiece piece) {
